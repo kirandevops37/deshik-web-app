@@ -67,12 +67,7 @@
       <version>3.1.0</version>
     </dependency>
   </dependencies>
-  <distributionManagement>
-    <repository>
-        <id>my-repository</id>
-        <url>http://my-repo-url.com/repository</url>
-    </repository>
-</distributionManagement>
+
 
 
   
