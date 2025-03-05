@@ -1,23 +1,21 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  
+
   <groupId>onlinebookstore</groupId>
   <artifactId>onlinebookstore</artifactId>
-  <version>0.0.1-SNAPSHOT</version> <!-- Updated version to SNAPSHOT -->
+  <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
 
   <properties>
-    <!-- SonarQube properties -->
-    <sonar.host.url>http://3.90.0.150:9000</sonar.host.url> <!-- SonarQube server URL -->
-    <sonar.projectKey>onlinebookstore</sonar.projectKey> <!-- Unique SonarQube project key -->
-    <sonar.projectName>Online Bookstore</sonar.projectName> <!-- SonarQube project name -->
-    <sonar.login>squ_b7cb62ad069eeaa2449d385cb7b5779f41121d1d</sonar.login> <!-- SonarQube token -->
+    <sonar.host.url>http://3.90.0.150:9000</sonar.host.url>
+    <sonar.projectKey>onlinebookstore</sonar.projectKey>
+    <sonar.projectName>Online Bookstore</sonar.projectName>
+    <sonar.login>squ_b7cb62ad069eeaa2449d385cb7b5779f41121d1d</sonar.login>
   </properties>
 
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
-      <!-- Compiler Plugin -->
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.8.0</version>
@@ -27,7 +25,6 @@
         </configuration>
       </plugin>
 
-      <!-- WAR Plugin -->
       <plugin>
         <artifactId>maven-war-plugin</artifactId>
         <version>3.2.1</version>
@@ -36,31 +33,27 @@
         </configuration>
       </plugin>
 
-      <!-- SonarQube Plugin -->
       <plugin>
         <groupId>org.sonarsource.scanner.maven</groupId>
         <artifactId>sonar-maven-plugin</artifactId>
-        <version>3.9.0.2155</version> <!-- Use the latest stable version -->
+        <version>3.9.0.2155</version>
       </plugin>
     </plugins>
   </build>
 
   <dependencies>
-    <!-- PostgreSQL JDBC Driver -->
     <dependency>
       <groupId>org.postgresql</groupId>
       <artifactId>postgresql</artifactId>
       <version>42.3.3</version>
     </dependency>
 
-    <!-- MySQL JDBC Driver -->
     <dependency>
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
       <version>8.0.16</version>
     </dependency>
 
-    <!-- Servlet API -->
     <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>javax.servlet-api</artifactId>
@@ -68,7 +61,15 @@
     </dependency>
   </dependencies>
 
+  <distributionManagement>
+    <repository>
+      <id>nexus-releases</id>
+      <url>http://your-nexus-repo-url/repository/maven-releases/</url>
+    </repository>
+    <snapshotRepository>
+      <id>nexus-snapshots</id>
+      <url>http://your-nexus-repo-url/repository/maven-snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
 
-
-  
 </project>
