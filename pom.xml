@@ -63,12 +63,12 @@
 
   <distributionManagement>
     <repository>
-      <id>nexus-releases</id>
-      <url>http://your-nexus-repo-url/repository/maven-releases/</url>
+      <id>kiranrepo-releases</id>
+      <url>http://3.94.64.111:8081/repository/kiranrepo-release/</url>
     </repository>
     <snapshotRepository>
-      <id>nexus-snapshots</id>
-      <url>http://your-nexus-repo-url/repository/maven-snapshots/</url>
+      <id>kiranrepo-snapshots</id>
+      <url>http://3.94.64.111:8081/repository/kiranrepo-snapshot/</url>
     </snapshotRepository>
   </distributionManagement>
 
