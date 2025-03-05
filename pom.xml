@@ -65,10 +65,18 @@
     <repository>
       <id>kiranrepo-releases</id>
       <url>http://3.94.64.111:8081/repository/kiranrepo-release/</url>
+      <credentials>
+        <username>admin</username>
+        <password>Kiran@123</password>
+      </credentials>
     </repository>
     <snapshotRepository>
       <id>kiranrepo-snapshots</id>
       <url>http://3.94.64.111:8081/repository/kiranrepo-snapshot/</url>
+      <credentials>
+        <username>admin</username>
+        <password>Kiran@123</password>
+      </credentials>
     </snapshotRepository>
   </distributionManagement>
 
