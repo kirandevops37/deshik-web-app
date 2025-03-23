@@ -1,4 +1,7 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>onlinebookstore</groupId>
@@ -26,6 +29,7 @@
       </plugin>
 
       <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-war-plugin</artifactId>
         <version>3.2.1</version>
         <configuration>
@@ -65,18 +69,10 @@
     <repository>
       <id>kiranrepo-releases</id>
       <url>http://3.94.64.111:8081/repository/kiranrepo-release/</url>
-      <credentials>
-        <username>admin</username>
-        <password>Kiran@123</password>
-      </credentials>
     </repository>
     <snapshotRepository>
       <id>kiranrepo-snapshots</id>
       <url>http://3.94.64.111:8081/repository/kiranrepo-snapshot/</url>
-      <credentials>
-        <username>admin</username>
-        <password>Kiran@123</password>
-      </credentials>
     </snapshotRepository>
   </distributionManagement>
 
